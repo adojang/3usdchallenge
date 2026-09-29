@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PourPrice – Candle Calculator &amp; Pricing Tool</title>
+<meta name="description" content="Know exactly what every candle costs and what to charge. Wax & fragrance calculator, cost and pricing tool, batch log. Works offline. One-time {{price}}.">
+<meta property="og:title" content="PourPrice – know what every candle really costs">
+<meta property="og:description" content="Wax & fragrance calculator, true cost per candle, profitable pricing and a batch log. One-time {{price}}, no subscription.">
+<meta property="og:image" content="{{siteUrl}}/og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon-192.png">
+<style>
+:root{--bg:#fbf7f2;--panel:#fff;--ink:#2b2118;--muted:#6f6257;--line:#e8ddd1;--brand:#b4541a;--brand-ink:#fff;--soft:#fbe9dc}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1612;--panel:#251e18;--ink:#f3eae1;--muted:#b3a597;--line:#3b3129;--brand:#e27a3a;--brand-ink:#1b1612;--soft:#3b2717}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:0 16px}
+header{padding:18px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}
+.logo img{width:34px;height:34px;border-radius:8px}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:36px;align-items:center;padding:24px 0 40px}
+h1{font-size:44px;line-height:1.08;margin:0 0 16px;letter-spacing:-.8px}
+h2{font-size:30px;margin:0 0 12px;letter-spacing:-.4px}
+.lead{font-size:19px;color:var(--muted);margin:0 0 22px}
+.btn{display:inline-block;background:var(--brand);color:var(--brand-ink);font-weight:800;text-decoration:none;padding:14px 22px;border-radius:10px;font-size:18px}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.fine{font-size:14px;color:var(--muted);margin-top:10px}
+.shot{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);box-shadow:0 20px 50px rgba(60,40,20,.15);display:block}
+section{padding:44px 0;border-top:1px solid var(--line)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+ul.ticks{list-style:none;padding:0;margin:0}
+ul.ticks li{padding:6px 0 6px 30px;position:relative}
+ul.ticks li:before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:900}
+.price{text-align:center}
+.price .amt{font-size:64px;font-weight:900;letter-spacing:-2px;margin:6px 0}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}
+footer{padding:30px 0 50px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:820px){.hero,.two,.grid3{grid-template-columns:1fr}h1{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="w">
+  <header><div class="logo"><img src="icon-192.png" alt="">PourPrice</div></header>
+
+  <div class="hero">
+    <div>
+      <h1>Know exactly what every candle costs – and what to charge.</h1>
+      <p class="lead">The candle maker's calculator, pricing tool and batch book in one simple app. No spreadsheets, no subscription, no sign-up.</p>
+      <div class="btns"><a class="btn" href="{{buyUrl}}">Get PourPrice – {{price}}</a><a class="btn alt" href="demo/">Try the free demo</a></div>
+      <p class="fine">One-time payment · Works offline · Your data never leaves your device</p>
+    </div>
+    <img class="shot" src="screenshot-recipe.png" alt="PourPrice recipe screen showing true cost per candle, suggested price and profit" width="1280" height="860">
+  </div>
+
+  <section>
+    <h2>Stop guessing. Start pricing for profit.</h2>
+    <p class="lead">Most makers undercharge because they forget the lid, the label, the wick, the fees and their own time. PourPrice counts all of it.</p>
+    <div class="grid3">
+      <div class="card"><h3>⚖️ Pour calculator</h3><p>Exact wax and fragrance oil weights for 1 or 100 candles, from your jar's water weight. Ounces or grams.</p></div>
+      <div class="card"><h3>💰 True cost per candle</h3><p>Wax, oils, blends, wicks, jars, lids, labels, boxes, labour and overhead – added up automatically.</p></div>
+      <div class="card"><h3>🏷️ Profitable pricing</h3><p>Wholesale & retail prices, profit after marketplace fees, and the price you need for your target margin.</p></div>
+      <div class="card"><h3>📒 Batch book</h3><p>Log every pour: lot number, temperatures, cure-ready date, cold &amp; hot throw ratings, burn-test notes.</p></div>
+      <div class="card"><h3>📦 Stock tracking</h3><p>Materials are deducted when you log a batch, with low-stock warnings before you run out mid-pour.</p></div>
+      <div class="card"><h3>🖨️ Pour sheets &amp; exports</h3><p>Print a checklist weigh-out sheet for the workbench. Export batches to CSV for your records.</p></div>
+    </div>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Your recipes. Your numbers. Your device.</h2>
+      <ul class="ticks">
+        <li>Fragrance blends (e.g. 70% lavender / 30% vanilla)</li>
+        <li>Fragrance load as % of wax <em>or</em> % of total – your choice</li>
+        <li>Warns when you exceed your wax's max fragrance load</li>
+        <li>Any currency, ounces or grams, light &amp; dark mode</li>
+        <li>Works on computer, and on your phone as a home-screen app</li>
+        <li>Backup &amp; restore with one click – no account, no cloud</li>
+      </ul>
+    </div>
+    <img class="shot" src="screenshot-batches.png" alt="PourPrice batch log with cure status and throw ratings" width="1280" height="860" loading="lazy">
+  </section>
+
+  <section class="price" id="buy">
+    <h2>Less than the cost of one wick pack.</h2>
+    <div class="amt">{{price}}</div>
+    <p class="lead">One-time purchase. Free 1.x updates. 30-day refund if it's not for you.</p>
+    <div class="btns" style="justify-content:center"><a class="btn" href="{{buyUrl}}">Get PourPrice</a><a class="btn alt" href="demo/">Try the demo first</a></div>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <details><summary>What do I get?</summary><p>A download with the PourPrice app (a single file that opens in your web browser), plus a private link to install it on your phone or tablet.</p></details>
+    <details><summary>Does it need internet or an account?</summary><p>No. Everything runs in your browser and your data is stored on your device only. Nothing is uploaded anywhere.</p></details>
+    <details><summary>Does it work on iPhone / Android?</summary><p>Yes – open your private link in Safari or Chrome and choose “Add to Home Screen”. On computers (Windows, Mac, Chromebook) just open the file.</p></details>
+    <details><summary>I use grams and euros / pounds / rand.</summary><p>Switch to grams and pick your currency in Settings. 20 currencies are built in.</p></details>
+    <details><summary>Can I move my data between devices?</summary><p>Yes – Export backup on one device, Import backup on the other. Anything you enter in the free demo can be imported into the full version too.</p></details>
+    <details><summary>Is it a subscription?</summary><p>No. Pay once, use it forever.</p></details>
+  </section>
+
+  <footer>© PourPrice · Made for candle makers · Questions: {{supportEmail}}<br>Calculations are estimates; always follow your suppliers' guidance and burn-test your candles.</footer>
+</div>
+</body>
+</html>

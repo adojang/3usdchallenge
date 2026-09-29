@@ -1,0 +1,24 @@
+PourPrice – Single User Licence
+
+One purchase = one licence for one person or one small business (a sole maker,
+or a maker plus their household/helpers) to use PourPrice on any number of
+their own devices.
+
+You may:
+  - Use PourPrice for personal or commercial candle making.
+  - Install it on all of your own computers, phones and tablets.
+  - Keep backup copies.
+
+You may not:
+  - Share, resell, sublicense, upload or give away the PourPrice file, its code,
+    or the buyer-only phone link.
+  - Remove this licence or claim the software as your own.
+
+PourPrice is provided "as is", without warranty of any kind. Calculations are
+estimates to help you plan; you are responsible for following your suppliers'
+safety data and for testing your products. In no event shall the author be
+liable for any claim, damages or other liability arising from use of the
+software.
+
+Refunds: if PourPrice doesn't work for you, contact {{supportEmail}} within
+30 days of purchase.
